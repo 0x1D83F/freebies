@@ -40,9 +40,6 @@ let { src, dest } = require('gulp'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify-es').default,
     imagemin = require('gulp-imagemin'),
-    webp = require('gulp-webp'),
-    webphtml = require('gulp-webp-html'),
-    webpcss = require('gulp-webpcss'),
     ttf2woff = require('gulp-ttf2woff'),
     ttf2woff2 = require('gulp-ttf2woff2'),
     fonter = require('gulp-fonter');
@@ -66,7 +63,6 @@ function synchro(arg) {
 function html(arg) {
     return src(path.source.html)
         .pipe(fileInclude())
-        .pipe(webphtml())
         .pipe(dest(path.build.html))
         .pipe(browserSync.stream())
 }
@@ -82,7 +78,6 @@ function css(arg) {
             overrideBrowserslist: ['last 5 versions'],
             cascade: true
         }))
-        .pipe(webpcss())
         .pipe(dest(path.build.css))
         .pipe(clean_css())
         .pipe(rename({
@@ -106,11 +101,6 @@ function js(arg) {
 
 function images(arg) {
     return src(path.source.img)
-        .pipe(
-            webp({
-                quality: 70
-            })
-        )
         .pipe(dest(path.build.img))
         .pipe(src(path.source.img))
         .pipe(
@@ -161,6 +151,8 @@ function fontsStyle(params) {
                     }
                     c_fontname = fontname;
                 }
+            }else if(err){
+                console.log(err)
             }
         })
     }

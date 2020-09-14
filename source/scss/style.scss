@@ -1,3 +1,4 @@
+@import 'null';
 @mixin font($font_name, $file_name, $weight, $style) {
 
     @font-face {
@@ -8,23 +9,18 @@
     font-style: #{$style};
     }
 }
-@import 'fonts';
 
-*{
-    margin: 0;
+@import 'fonts';
+@import 'var';
+@import 'header';
+@import 'choose';
+@import 'media';
+
+
+.wrapper{
+    position: relative;
+    overflow: hidden;
 }
-.wrap {
-    padding: 100px;
-}
-.wrap h1{
-    // padding: 50px;
-    font-family: 'LegatoTF-RegularItalic';
-}
-.wrap h2 {
-    font-size: 30px;
-    font-family: 'Hathem Bosteem';
-}
-.w{
-    font-family: 'bf-pers1';
-}
+
+
 

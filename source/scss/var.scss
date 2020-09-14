@@ -1,0 +1,39 @@
+$blue: #019edb;
+
+$baron: Baron;
+$bebas: Bebas;
+$hara: harabara;
+$latoH: 'Lato-Heavy', sans-serif;
+$calc: calc(260 / 1400 * 100vw);
+
+@mixin gum($width,$height,$bgc,$deg,$left,$top){
+    width: calc(#{$width} / 1400 * 100vw);
+    height: calc(#{$height} / 1400 * 100vw);
+    background-color: $bgc;
+    transform: rotate($deg);
+    left: calc(#{$left} / 1400 * 100vw);
+    top: calc(#{$top} / 1400 * 100vw);
+}
+@mixin gum-bg($width,$height,$bgc,$deg,$right,$top){
+    width: calc(#{$width} / 1400 * 100vw);
+    height: calc(#{$height} / 1400 * 100vw);
+    background-color: $bgc;
+    transform: rotate($deg);
+    right: calc(#{$right} / 1400 * 100vw);
+    top: calc(#{$top} / 1400 * 100vw);
+}
+
+@mixin baron {
+    font-family: "Baron", sans-serif;
+}
+@mixin bebas {
+    font-family: "Bebas", sans-serif;
+}
+@mixin hara {
+    font-family: "harabara", sans-serif;
+}
+@mixin lato {
+    font-family: 'Lato-Heavy', sans-serif;
+}
+
+

@@ -1,4 +1,88 @@
-h1{
-    color: red;
-    perspective: 1000px;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header__title {
+    display: flex;
+    position: relative;
+    left: calc(184 / 1400 * 100vw);
+    top: calc(17 / 1400 * 100vw);
+}
+.header__title-items {
+    display: flex;
+}
+.header__title-items__logo {
+    z-index: 2;
+}
+.items__logo-bg img{
+    width: calc(40 / 1400 * 100vw);
+}
+.items__logo-min img{
+    width: calc(30 / 1400 * 100vw);
+}
+.items__logo-min {
+    align-self: flex-end;
+    position: relative;
+    left: -5px;
+}
+.header__title-text {
+    align-self: center;
+    z-index: 2;
+}
+.header__title-text__main h1{
+    font-size: calc(30 / 1400 * 100vw);
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Bebas;
+    letter-spacing: 1px;
+}
+.header__title-text__main h2{
+    font-size: calc(14.5 / 1400 * 100vw);
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1.7px;
+    @include baron;
+}
+.header__menu {
+    position: relative;
+    top: calc(42 / 1400 * 100vw);
+    right: calc(150 / 1400 * 100vw);
+}
+.menu__list {
+    display: flex;
+}
+.menu__item {
+    margin: 0px calc(35 / 1400 * 100vw) 0px 0px;
+}
+.menu__item:last-child {
+    margin: 0px 0px 0px 0px;
+}
+.menu__link {
+    color: #373636;
+    @include lato;
+    font-size: calc(14 / 1400 * 100vw);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+}
+.header__burger-close {
+    display: none;
+}
+.line {
+}
+
+.triangle_ps{
+    position: absolute;
+}
+.header__triangles-blue {
+    @include gum(260,260,#019edb,45deg,144,-130);
+    z-index: 1;
+}
+.header__triangles-black {
+    @include gum(116,116,#1b1b1b,45deg,383,-65);
+}
+
+.header__triangles-grey {
+    @include gum-bg(1200,1200,#f2f2f2,45deg,-610,-610);
 }

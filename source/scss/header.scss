@@ -82,7 +82,9 @@
 .header__triangles-black {
     @include gum(116,116,#1b1b1b,45deg,383,-65);
 }
-
 .header__triangles-grey {
     @include gum-bg(1200,1200,#f2f2f2,45deg,-610,-610);
+}
+.header__triangles-grey-min{
+    @include gum(466,466,#f2f2f2,45deg,-233,230);
 }

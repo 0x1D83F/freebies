@@ -277,6 +277,17 @@ h6 {
   top: calc(-610 / 1400 * 100vw);
 }
 
+.header__triangles-grey-min {
+  width: calc(466 / 1400 * 100vw);
+  height: calc(466 / 1400 * 100vw);
+  background-color: #f2f2f2;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: calc(-233 / 1400 * 100vw);
+  top: calc(230 / 1400 * 100vw);
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;

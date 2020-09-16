@@ -288,6 +288,69 @@ h6 {
   top: calc(230 / 1400 * 100vw);
 }
 
+.choose {
+  position: relative;
+  top: calc(500 / 1400 * 100vw);
+  z-index: -1;
+}
+
+.rect-bg {
+  position: absolute;
+  top: calc(240 / 1400 * 100vw);
+  right: calc(130 / 1400 * 100vw);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.rect-bg-girl {
+  position: relative;
+  width: calc(767 / 1400 * 100vw);
+  height: calc(767 / 1400 * 100vw);
+}
+
+.rect-bg-girl img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(1075 / 1400 * 100vw);
+  height: calc(1075 / 1400 * 100vw);
+  -webkit-transform: rotate(-45deg) translateX(20%);
+      -ms-transform: rotate(-45deg) translateX(20%);
+          transform: rotate(-45deg) translateX(20%);
+}
+
+.rect-best {
+  position: absolute;
+  top: 320px;
+  left: 110px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: calc(400 / 1400 * 100vw);
+  height: calc(400 / 1400 * 100vw);
+  background-color: #1b1b1b;
+}
+
+.rect-best-items {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  max-width: 256px;
+}
+
+.best-item-title h2 {
+  color: #019edb;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.best-item-subs p {
+  text-align: justify;
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;

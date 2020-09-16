@@ -1,0 +1,49 @@
+.rect-bg{
+    position: absolute;
+    top: calc(240 / 1400 * 100vw);
+    right: calc(130 / 1400 * 100vw);
+    transform: rotate(45deg);
+}
+.rect-bg-girl {
+    position: relative;
+    width: calc(767 / 1400 * 100vw);
+    height: calc(767 / 1400 * 100vw);
+}
+.rect-bg-girl img{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: calc(1075 / 1400 * 100vw);
+    height: calc(1075 / 1400 * 100vw);
+    transform: rotate(-45deg) translateX(20%);  
+}
+
+.rect-best {
+    position: absolute;
+    top: 320px;
+    left: 110px;
+
+    transform: rotate(45deg);
+    width: calc(400 / 1400 * 100vw);
+    height: calc(400 / 1400 * 100vw);
+    background-color: #1b1b1b;
+}
+.rect-best-items {
+    transform: rotate(-45deg);
+    max-width: 256px;
+}
+.best-item-title h2{
+    color: #019edb;
+    @include lato;
+    font-size: 33px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.best-item-subs p{
+    text-align: justify;
+}
+.best-item-btn {
+}
+.best-button {
+}

@@ -285,13 +285,17 @@ h6 {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   left: calc(-233 / 1400 * 100vw);
-  top: calc(230 / 1400 * 100vw);
+  top: calc(327 / 1400 * 100vw);
 }
 
 .choose {
   position: relative;
   top: calc(500 / 1400 * 100vw);
   z-index: -1;
+}
+
+.choose img {
+  min-width: 100%;
 }
 
 .rect-bg {
@@ -322,14 +326,25 @@ h6 {
 
 .rect-best {
   position: absolute;
-  top: 320px;
-  left: 110px;
+  top: calc(400 / 1400 * 100vw);
+  left: calc(194 / 1400 * 100vw);
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   width: calc(400 / 1400 * 100vw);
   height: calc(400 / 1400 * 100vw);
   background-color: #1b1b1b;
+  -webkit-box-shadow: -11px 8px 46px rgba(35, 31, 32, 0.57);
+          box-shadow: -11px 8px 46px rgba(35, 31, 32, 0.57);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rect-best-items {
@@ -339,16 +354,152 @@ h6 {
   max-width: 256px;
 }
 
+.best-item-title {
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+}
+
 .best-item-title h2 {
   color: #019edb;
   font-family: 'Lato-Heavy', sans-serif;
-  font-size: 33px;
+  font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
+.best-item-subs {
+  margin: 0px 0px 33px 0px;
+}
+
 .best-item-subs p {
   text-align: justify;
+  color: #ffffff;
+  font-family: "Lato-Heavy", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.best-button {
+  color: #ffffff;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  padding: 11px 17px;
+  background-color: #019edb;
+  display: inline-block;
+  border-radius: 30px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.best-button:hover {
+  background-color: #0385b8;
+}
+
+.rect-number {
+  width: calc(323 / 1400 * 100vw);
+  height: calc(323 / 1400 * 100vw);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #019edb;
+  position: absolute;
+  z-index: 3;
+  top: calc(802 / 1400 * 100vw);
+  left: calc(380 / 1400 * 100vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rect-number-wrap {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.rect-num-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 18px 0px;
+}
+
+.num-str h2 {
+  color: #fefefe;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-size: 73px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+}
+
+.num-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  padding: 0px 0px 0px 10px;
+}
+
+.rect-num-subtitle {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  margin: 0px 0px 18px 0px;
+}
+
+.rect-num-discription {
+  color: #ffffff;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: justify;
+  max-width: 256px;
+}
+
+.rect-bw {
+  position: absolute;
+  top: calc(660 / 1400 * 100vw);
+  left: calc(565 / 1400 * 100vw);
+  width: calc(587 / 1400 * 100vw);
+  height: calc(587 / 1400 * 100vw);
+}
+
+.rect-bw img {
+  width: calc(587 / 1400 * 100vw);
+  height: calc(587 / 1400 * 100vw);
+}
+
+.rect-mini {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: calc(73 / 1400 * 100vw);
+  height: calc(73 / 1400 * 100vw);
+  background-color: #019edb;
+  position: absolute;
+  top: calc(305 / 1400 * 100vw);
+  left: calc(475 / 1400 * 100vw);
 }
 
 .wrapper {

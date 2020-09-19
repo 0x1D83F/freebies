@@ -1,7 +1,6 @@
 .choose {
-    position: relative;
-    top: calc(500 / 1400 * 100vw);
-    z-index: -1;
+    // top: calc(500 / 1400 * 100vw);
+    transform: translateY(500px);
 }
 .choose img{
     min-width: 100%;

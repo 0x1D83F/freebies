@@ -166,6 +166,8 @@
 
 
 .about {
+    position: relative;
+    top: -100px;
 }
 .about_wrap {
     text-align: center;
@@ -241,6 +243,6 @@
     transform: rotate(45deg);
 }
 .about-btn {
-    margin: 50px 0px 74px 0px;
+    margin: 50px 0px 0px 0px;
 }
 

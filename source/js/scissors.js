@@ -1,16 +1,24 @@
-window.addEventListener('resize', function () {
+const best = document.querySelector('.best-item-subs p').innerHTML;
+const lorem = document.querySelector('.rmb-num-discription  p').innerHTML;
+const items = document.querySelectorAll('.resize-mod p');
+
+const bestTrim = best.slice(0, 30) + ' ...';
+const loremTrim = lorem.slice(0, 30) + ' ...';
+
+
+
+function trimmer(){
     let userWindow = window.innerWidth || document.documentElement.clientWidth;
-
-    if (userWindow <= 1100) {
-        const best = document.querySelectorAll('.resize-mod p');
-
-        (function() {
-            best.forEach(item => {
-                item.innerHTML = item.innerHTML.slice(0, 30) + ' ...';
-            })
-        })();
+    if(userWindow <= 1100){
+        items.forEach((item,index) => index === 0 ? item.innerHTML = bestTrim :  item.innerHTML = loremTrim)
+    } else {
+        items.forEach((item,index) => index === 0 ? item.innerHTML = best :  item.innerHTML = lorem)
     }
-})
+}
+
+
+window.addEventListener('resize', trimmer)
+window.addEventListener('load', trimmer)
 
 
 

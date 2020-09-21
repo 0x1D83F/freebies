@@ -89,3 +89,15 @@
 .header__rhombus-grey-min{
     @include gum(466,466,#f2f2f2,45deg,-233,327);
 }
+
+.header__burger-close {
+    position: relative;
+    right: 10px;
+    top: 20px;
+    z-index: 52;
+}
+.line {
+    width: 30px;
+    height: 20px;
+    background-color: black;
+}

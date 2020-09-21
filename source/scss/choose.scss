@@ -1,6 +1,99 @@
-.choose {
-    transform: translateY(500px);
+
+.choose-mn{
+    height: calc(600 / 1400 * 100vw);
+}
+.choose-bg {
+    background: url(../img/choose/Layer_11.jpg) center / cover no-repeat;
+    position: relative;
+    // height: calc(1223 / 1366 * 100vw);
+    height: 1216px;
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .choose img{
     min-width: 100%;
+}
+
+.about {
+    margin-bottom: 74px;
+    position: relative; 
+    z-index: 2;
+}   
+.about_wrap {
+    text-align: center;
+}
+.about__title h2{
+    color: #ffffff;
+    @include lato;
+    font-size: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.49px;
+}
+.about__title {
+    margin: 0px 0px 21px 0px;
+}
+.about__title-sec h2{
+    color: #ffffff;
+    @include lato;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+}
+.about__title-sec{
+    margin-bottom: 55px;
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+.about-block {
+    background-color: rgba(69, 69, 69, .5);
+    padding: 40px 30px;
+    max-width: 322px;
+}
+.about-block-title h2{
+    text-align: start;
+    color: #ffffff;
+    @include hara;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.about-block-title{
+    margin: 0px 0px 25px 0px;
+}
+.about-block-sub p{
+    text-align: justify;
+    color: #ffffff;
+    @include lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.about-separator {
+    align-self: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 0px 65px 0px 65px;
+}
+.separator-item {
+    height: 40px;
+    width: 3px;
+    background-color: #fff;
+}
+.separator-item-rect{
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    margin: 10px 0px 10px 0px;
+    transform: rotate(45deg);
+}
+.about-btn {
+    margin: 50px 0px 0px 0px;
 }

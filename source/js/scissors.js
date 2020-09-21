@@ -1,4 +1,3 @@
-'use strict';
 window.addEventListener('resize', function () {
     let userWindow = window.innerWidth || document.documentElement.clientWidth;
 
@@ -15,5 +14,3 @@ window.addEventListener('resize', function () {
 
 
 
-;
-  

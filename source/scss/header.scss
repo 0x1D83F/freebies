@@ -6,7 +6,7 @@
 .header__title {
     display: flex;
     position: relative;
-    left: calc(184 / 1400 * 100vw);
+    left: calc(172 / 1400 * 100vw);
     top: calc(17 / 1400 * 100vw);
 }
 .header__title-items {
@@ -46,6 +46,7 @@
 }
 .header__menu {
     position: relative;
+    z-index: 4;
     top: calc(42 / 1400 * 100vw);
     right: calc(150 / 1400 * 100vw);
 }
@@ -75,16 +76,16 @@
 .triangle_ps{
     position: absolute;
 }
-.header__triangles-blue {
+.header__rhombus-blue {
     @include gum(260,260,#019edb,45deg,144,-130);
-    z-index: 1;
+    z-index: 2;
 }
-.header__triangles-black {
+.header__rhombus-black {
     @include gum(116,116,#1b1b1b,45deg,383,-65);
 }
-.header__triangles-grey {
+.header__rhombus-grey {
     @include gum-bg(1200,1200,#f2f2f2,45deg,-610,-610);
 }
-.header__triangles-grey-min{
+.header__rhombus-grey-min{
     @include gum(466,466,#f2f2f2,45deg,-233,327);
 }

@@ -13,6 +13,7 @@ $calc: calc(260 / 1400 * 100vw);
     transform: rotate($deg);
     left: calc(#{$left} / 1400 * 100vw);
     top: calc(#{$top} / 1400 * 100vw);
+    z-index: 1;
 }
 @mixin gum-bg($width,$height,$bgc,$deg,$right,$top){
     width: calc(#{$width} / 1400 * 100vw);
@@ -21,6 +22,7 @@ $calc: calc(260 / 1400 * 100vw);
     transform: rotate($deg);
     right: calc(#{$right} / 1400 * 100vw);
     top: calc(#{$top} / 1400 * 100vw);
+    z-index: 1;
 }
 
 @mixin baron {

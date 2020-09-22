@@ -141,6 +141,14 @@ h6 {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Lato-Light";
+  font-display: swap;
+  src: url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,16 +668,206 @@ h6 {
 
 .portfolio {
   position: relative;
-  margin: 0px 0px 0px 0px;
 }
 
-.portfolio img {
+.portfolio-rmb-white {
+  height: calc(300 / 1400 * 100vw);
+}
+
+.portfolio-wall {
+  background: url(../img/choose/Layer_11.jpg) center/cover no-repeat;
+  height: 1216px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+  padding: 0px 288px 0px 315px;
+}
+
+.wall-txt {
+  margin: 0px 0px 105px 0px;
+}
+
+.wall-title {
+  font-family: 'Lato-Heavy', sans-serif;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.wall-sub p {
+  font-family: 'Lato-Light', sans-serif;
+  margin-top: 30px;
+  color: white;
+  font-weight: 300;
+  opacity: .7;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+}
+
+.portfolio-rmb {
+  position: absolute;
+  top: -3px;
+  width: 100%;
+}
+
+.portfolio-rmb img {
+  width: 100%;
   max-width: 100%;
+}
+
+.prt-rmb-second {
+  width: calc(192 / 1400 * 100vw);
+  height: calc(192 / 1400 * 100vw);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: calc(495 / 1400 * 100vw);
+  left: calc(385 / 1400 * 100vw);
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.prt-rmb-second-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.rmb-title h2 {
+  color: #019edb;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-size: 83px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: default;
+  margin: 0px 10px -14px 0px;
+}
+
+.rmb-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #019edb;
+  border-radius: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.prt-rmb-main {
+  width: calc(377 / 1400 * 100vw);
+  height: calc(377 / 1400 * 100vw);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: calc(624 / 1400 * 100vw);
+  left: calc(510 / 1400 * 100vw);
+  z-index: 5;
+}
+
+.rmb-main-items {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: 40px 0px 0px 40px;
+}
+
+.prt-rmb-main__titlte {
+  text-align: center;
+  color: #019edb;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  margin-bottom: 25px;
+}
+
+.prt-rmb-main__sub {
+  max-width: 251px;
+  color: #1b1b1b;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.prt-rmb-main__btn {
+  text-align: center;
+}
+
+.prt-rmb-left {
+  position: absolute;
+  z-index: 4;
+  top: calc(667 / 1400 * 100vw);
+  left: calc(109/ 1400 * 100vw);
+}
+
+.prt-rmb-left img {
+  width: calc(520 / 1400 * 100vw);
+  height: calc(520 / 1400 * 100vw);
+}
+
+.prt-rmb-right {
+  position: absolute;
+  z-index: 4;
+  top: calc(667 / 1400 * 100vw);
+  right: calc(112 / 1400 * 100vw);
+}
+
+.prt-rmb-right img {
+  width: calc(520 / 1400 * 100vw);
+  height: calc(520 / 1400 * 100vw);
 }
 
 .wrapper {
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 1400px) {
+  .portfolio-wall {
+    height: 1350px;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -687,7 +885,13 @@ h6 {
     font-size: 18px;
   }
 
-  .rect-num-discription {
+  .rmb-num-discription {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .prt-rmb-main__sub {
     font-size: 18px;
   }
 }
@@ -726,6 +930,16 @@ h6 {
     -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
             transform: translateY(0%);
+  }
+
+  .rmb-title h2 {
+    font-size: 50px;
+    margin: 0px 10px -10px 0px;
+  }
+
+  .rmb-dot {
+    width: 12px;
+    height: 12px;
   }
 }
 
@@ -775,17 +989,61 @@ h6 {
   .best-item-title h2 {
     font-size: 20px;
   }
+
+  .portfolio-wall {
+    padding: 0px 50px 0px 50px;
+    height: 916px;
+  }
 }
 
 @media (max-width: 768px) {
   .resize-mod p {
     display: none;
   }
+
+  .rmb-title h2 {
+    font-size: 30px;
+    margin: 0px 5px -5px 0px;
+  }
+
+  .rmb-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .prt-rmb-main__titlte {
+    font-size: 24px;
+  }
+
+  .prt-rmb-main__sub {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .prt-rmb-main__titlte {
+    margin-bottom: 10px;
+  }
+
+  ._btn-bs {
+    padding: 7px 12px;
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 680px) {
   .choose-bg {
     height: 1146px;
+  }
+
+  .rmb-main-items {
+    margin: 10px 0px 0px 10px;
+  }
+
+  .prt-rmb-main__titlte {
+    font-size: 17px;
+  }
+
+  .portfolio-wall {
+    height: 816px;
   }
 }
 
@@ -832,6 +1090,10 @@ h6 {
   .choose-bg {
     height: 1116px;
   }
+
+  .portfolio-wall {
+    height: 716px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -855,10 +1117,23 @@ h6 {
   .choose-bg {
     height: 1046px;
   }
+
+  .prt-rmb-main__titlte {
+    font-size: 14px;
+  }
+
+  ._btn-bs {
+    padding: 5px 9px;
+    font-size: 9px;
+  }
 }
 
 @media (max-width: 391px) {
   .choose-bg {
     height: 1016px;
+  }
+
+  .portfolio-wall {
+    height: 816px;
   }
 }

@@ -10,8 +10,18 @@
     .best-item-subs p{
         font-size: 18px;
     }
-    .rect-num-discription{
+    .rmb-num-discription{
         font-size: 18px;
+        line-height: 20px;
+        margin: 40px 0px 0px 0px;
+    }
+    .prt-rmb-main__sub{
+        font-size: 18px;
+    }
+}
+@media (min-width: 1400px ){
+    .portfolio-wall{
+        height: 1350px;
     }
 }
 
@@ -38,6 +48,14 @@
     }
     .num-circle{
         transform: translateY(0%);
+    }
+    .rmb-title h2{
+        font-size: 50px;
+        margin: 0px 10px -10px 0px;
+    }
+    .rmb-dot{
+        width: 12px;
+        height: 12px;
     }
 }
 
@@ -71,15 +89,49 @@
     .best-item-title h2{
         font-size: 20px;
     }
+    .portfolio-wall{
+        padding: 0px 50px 0px 50px;
+        height: 916px;
+    }
 }
 @media (max-width: 768px){
     .resize-mod p{
         display: none;
     }
+    .rmb-title h2{
+        font-size: 30px;
+        margin: 0px 5px -5px 0px;
+    }
+    .rmb-dot{
+        width: 7px;
+        height: 7px;
+    }
+    .prt-rmb-main__titlte{
+        font-size: 24px;
+    }
+    .prt-rmb-main__sub{
+        margin: 0px 0px 0px 0px;
+    }
+    .prt-rmb-main__titlte{
+        margin-bottom: 10px;
+    }
+    ._btn-bs{
+        padding:7px 12px;
+        font-size: 11px;
+    }
 }
 @media (max-width: 680px){
     .choose-bg{
         height: 1146px;
+    }
+    .rmb-main-items{
+        margin: 10px 0px 0px 10px;
+    }
+    .prt-rmb-main__titlte{
+        font-size: 17px;
+    }
+    .portfolio-wall{
+        height: 816px;
     }
 }
 @media (max-width: 580px){
@@ -114,6 +166,9 @@
     .choose-bg{
         height: 1116px;
     }
+    .portfolio-wall{
+        height: 716px;
+    }
 }
 @media (max-width: 480px){
     .best-item-title h2{
@@ -132,9 +187,19 @@
     .choose-bg{
         height: 1046px;
     }
+    .prt-rmb-main__titlte{
+        font-size: 14px;
+    }
+    ._btn-bs{
+        padding: 5px 9px;
+        font-size: 9px;
+    }
 }
 @media (max-width: 391px){
     .choose-bg{
         height: 1016px;
+    }
+    .portfolio-wall{
+        height: 816px;
     }
 }

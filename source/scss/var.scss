@@ -37,5 +37,8 @@ $calc: calc(260 / 1400 * 100vw);
 @mixin lato {
     font-family: 'Lato-Heavy', sans-serif;
 }
+@mixin lato-l {
+    font-family: 'Lato-Light', sans-serif;
+}
 
 

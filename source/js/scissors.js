@@ -1,9 +1,11 @@
 const best = document.querySelector('.best-item-subs p').innerHTML;
 const lorem = document.querySelector('.rmb-num-discription  p').innerHTML;
+const portrait = document.querySelector('.prt-rmb-main__sub p').innerHTML;
 const items = document.querySelectorAll('.resize-mod p');
 
 const bestTrim = best.slice(0, 30) + ' ...';
 const loremTrim = lorem.slice(0, 30) + ' ...';
+const portText = portrait.slice(0, 30) + ' ...';
 
 
 

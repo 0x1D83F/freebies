@@ -152,7 +152,7 @@ function fontsStyle(params) {
                     c_fontname = fontname;
                 }
             }else if(err){
-                console.log(err)
+                console.log(err + ' ошибка')
             }
         })
     }

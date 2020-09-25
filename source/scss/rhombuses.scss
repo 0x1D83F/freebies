@@ -132,13 +132,14 @@
 
     margin: 0px 0px 18px 0px;
 }
-.rmb-num-discription {
+.rmb-num-discription p{
     color: #ffffff;
     @include lato;
     font-size: 13px;
     font-weight: 400;
     text-align: justify;
     max-width: 256px;
+    line-height: 20px;
 }
 
 

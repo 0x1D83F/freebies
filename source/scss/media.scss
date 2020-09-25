@@ -29,6 +29,9 @@
     .choose-bg {
         height: 1216px;
     }
+    .rmb-num-discription p{
+        line-height: 13px;
+    }
     
 }
 @media (max-width: 968px){
@@ -37,7 +40,7 @@
     }
     .num-str{
         display: flex;
-        align-content: flex-end
+        align-content: flex-end;
     }
     .num-str h2{
         font-size: 50px;
@@ -78,6 +81,10 @@
     .work-rmb-number h3{
         font-size: 40px;
     }
+    .testi-items{
+        padding: 0px 20px;
+    }
+    
 }
 
 @media (max-width: 867px){
@@ -119,6 +126,23 @@
     }
     .work-restyle{
         transform: rotate(0deg);
+    }
+    .testi-info{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .testi-items{
+        flex-direction:column;
+        align-items: center;
+    }
+    .separator-four{
+        align-self: center;
+        margin: 40px 0px 40px 0px;
+    }
+    .testi-btn-left,
+    .testi-btn-right{
+        text-align: center;
     }
 }
 @media (max-width: 768px){
@@ -180,8 +204,12 @@
     .best-item-title h2{
         font-size: 16px;
     }
-    .num-str h2{
+    .num-str h2,
+    .header__title-t h2{
         font-size: 30px
+    }
+    .header__sub-t p{
+        font-size: 18px;
     }
     .rmb-num-subtitle{
         font-size: 16px;

@@ -149,6 +149,14 @@ h6 {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Lato-Regular";
+  font-display: swap;
+  src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,7 +436,7 @@ h6 {
 }
 
 .separator-item {
-  height: 40px;
+  height: 46px;
   width: 3px;
   background-color: #fff;
 }
@@ -621,13 +629,14 @@ h6 {
   margin: 0px 0px 18px 0px;
 }
 
-.rmb-num-discription {
+.rmb-num-discription p {
   color: #ffffff;
   font-family: 'Lato-Heavy', sans-serif;
   font-size: 13px;
   font-weight: 400;
   text-align: justify;
   max-width: 256px;
+  line-height: 20px;
 }
 
 .rmb-bw {
@@ -983,6 +992,76 @@ h6 {
   font-family: 'Lato-Light', sans-serif;
 }
 
+.testi {
+  background: url(../img/testi/main_bg.jpg) center/cover no-repeat;
+  position: relative;
+  padding-top: calc(230 / 1400 * 100vw);
+  padding-bottom: calc(115 / 1400 * 100vw);
+}
+
+.testi-info {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.testi_header {
+  margin-bottom: calc(64 / 1400 * 100vw);
+}
+
+.header__title-t {
+  margin-bottom: calc(20 / 1400 * 100vw);
+}
+
+.header__title-t h2 {
+  font-size: 38px;
+}
+
+.header__sub-t p {
+  font-size: 24px;
+  color: white;
+  font-family: 'Lato-Heavy', sans-serif;
+  text-transform: uppercase;
+}
+
+.testi-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testi-block {
+  max-width: 340px;
+}
+
+.testi-block-text p {
+  font-family: 'Lato-Regular', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.testi-block-btn {
+  margin-top: 33px;
+}
+
+.separator-four {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.testi-btn-right {
+  text-align: right;
+}
+
+.testi-btn-left {
+  text-align: left;
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;
@@ -1023,6 +1102,10 @@ h6 {
 @media (max-width: 1200px) {
   .choose-bg {
     height: 1216px;
+  }
+
+  .rmb-num-discription p {
+    line-height: 13px;
   }
 }
 
@@ -1097,6 +1180,10 @@ h6 {
   .work-rmb-number h3 {
     font-size: 40px;
   }
+
+  .testi-items {
+    padding: 0px 20px;
+  }
 }
 
 @media (max-width: 867px) {
@@ -1159,6 +1246,40 @@ h6 {
     -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+
+  .testi-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .testi-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .separator-four {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 40px 0px 40px 0px;
+  }
+
+  .testi-btn-left,
+  .testi-btn-right {
+    text-align: center;
   }
 }
 
@@ -1238,8 +1359,13 @@ h6 {
     font-size: 16px;
   }
 
-  .num-str h2 {
+  .num-str h2,
+  .header__title-t h2 {
     font-size: 30px;
+  }
+
+  .header__sub-t p {
+    font-size: 18px;
   }
 
   .rmb-num-subtitle {

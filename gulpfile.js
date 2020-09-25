@@ -54,7 +54,7 @@ function synchro(arg) {
         server: {
             baseDir: './' + projectFolder + '/'
         },
-        port: 3000,
+        port: 3002,
         notify: false,
 
     })

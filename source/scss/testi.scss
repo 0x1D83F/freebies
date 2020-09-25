@@ -1,0 +1,74 @@
+.testi {
+    background: url(../img/testi/main_bg.jpg) center / cover no-repeat;
+    position: relative;
+    padding-top: calc(230 / 1400 * 100vw);
+    padding-bottom: calc(115 / 1400 * 100vw);
+}
+.work-rmb {
+}
+.block-flex {
+}
+.work-rmb-rotate {
+}
+.work-rmb-number {
+}
+.work-rmb-dot {
+}
+.testi-info {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.testi_header {
+    margin-bottom: calc(64 / 1400 * 100vw)
+}
+.header__title-t{
+    margin-bottom: calc(20 / 1400 * 100vw);
+}
+.header__title-t h2{
+    font-size: 38px;
+}
+.header__sub-t p{
+    font-size: 24px;
+    color: white;
+    @include lato;
+    text-transform: uppercase;
+}
+.testi-items {
+    display: flex;
+    justify-content: center;
+}
+.testi-block {
+    max-width: 340px;
+}
+.testi-block-text p{
+    @include lato-r;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+.testi-block-btn {
+    margin-top: 33px;
+}
+.separator-four{
+    align-self: flex-start;
+}
+.testi-btn-right{
+    text-align: right;
+}
+.testi-btn-left{
+    text-align: left;
+}
+.about-btn {
+}
+.best-item-btn {
+}
+.best-button {
+}
+.about-separator {
+}
+.separator-item {
+}
+.separator-item-rect {
+}

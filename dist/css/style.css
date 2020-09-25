@@ -1151,6 +1151,10 @@ h6 {
     height: 916px;
   }
 
+  .work {
+    background: url(../img/work/work__bg.jpg) 60% 0px/cover no-repeat;
+  }
+
   .work-restyle {
     -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);

@@ -1,0 +1,30 @@
+.social {
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+    padding: 47px 10px;
+}
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2.5px solid white;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+}
+.social-icon img{
+    max-width: 100%;
+}
+.social-icon-items{
+    margin: 0px 44px 0px 0px;
+}
+.social-icon-items:last-child{
+    margin: 0px 0px 0px 0px;
+}
+.social-link:hover .social-icon{
+    background-color: #1e7dcf;
+}

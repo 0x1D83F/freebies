@@ -12,9 +12,9 @@ const portText = portrait.slice(0, 30) + ' ...';
 function trimmer(){
     let userWindow = window.innerWidth || document.documentElement.clientWidth;
     if(userWindow <= 1100){
-        items.forEach((item,index) => index === 0 ? item.innerHTML = bestTrim :  item.innerHTML = loremTrim)
+        items.forEach((item,index) => (index === 0 ? item.innerHTML = bestTrim : item.innerHTML = loremTrim) )
     } else {
-        items.forEach((item,index) => index === 0 ? item.innerHTML = best :  item.innerHTML = lorem)
+        items.forEach((item,index) => (index === 0 ? item.innerHTML = best : item.innerHTML = lorem) )
     }
 }
 

@@ -1105,7 +1105,151 @@ h6 {
 }
 
 .social-link:hover .social-icon {
-  background-color: #1e7dcf;
+  background-color: #0e76dd;
+}
+
+.touch {
+  position: relative;
+  padding-top: calc(140 / 1400 * 100vw);
+  padding-bottom: calc(100 / 1400 * 100vw);
+  padding-right: 10px;
+  background: url(../img/choose/Layer_11.jpg) center/cover no-repeat;
+}
+
+.touch-mod {
+  top: calc(35 / 1400 * 100vw);
+}
+
+.touch-header {
+  margin-bottom: calc(76 / 1400 * 100vw);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.touch-header h2 {
+  font-size: 38px;
+  font-family: 'Lato-Heavy', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.touch-items-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.touch-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.touch-block-email {
+  margin-right: calc(112 / 1400 * 100vw);
+  margin-left: calc(183 / 1400 * 100vw);
+}
+
+.touch-block:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.touch-block-tel {
+  margin-right: calc(143 / 1400 * 100vw);
+}
+
+.touch-rmb {
+  width: calc(50 / 1400 * 100vw);
+  height: calc(50 / 1400 * 100vw);
+  background-color: #019edb;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.touch-rmb-img {
+  -webkit-transform: rotate(-45deg) translateX(50%);
+      -ms-transform: rotate(-45deg) translateX(50%);
+          transform: rotate(-45deg) translateX(50%);
+}
+
+.touch-info {
+  margin: 0px 0px 0px 60px;
+}
+
+.touch-info-title {
+  margin-bottom: 20px;
+}
+
+.touch-info-title h2 {
+  font-size: 17px;
+  font-family: 'Lato-Heavy', sans-serif;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.touch-info__link-info a {
+  font-size: 16px;
+  font-family: 'Lato-Heavy', sans-serif;
+  line-height: 24px;
+  color: #fff;
+}
+
+.copyright {
+  margin: 77px 0px 0px 0px;
+  text-align: center;
+}
+
+.copyright-info h3 {
+  font-size: 17px;
+  font-family: 'Lato-Regular', sans-serif;
+  color: #fff;
+  line-height: 24px;
+}
+
+.top {
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  -webkit-transform: translate(-50%) rotate(45deg);
+      -ms-transform: translate(-50%) rotate(45deg);
+          transform: translate(-50%) rotate(45deg);
+  width: calc(110 / 1400 * 100vw);
+  height: calc(110 / 1400 * 100vw);
+  background-color: #019edb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top a {
+  display: inline-block;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  font-size: 17px;
+  font-family: 'Lato-Regular', sans-serif;
+  color: #fff;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .wrapper {
@@ -1230,6 +1374,11 @@ h6 {
   .testi-items {
     padding: 0px 20px;
   }
+
+  .top {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media (max-width: 867px) {
@@ -1327,6 +1476,32 @@ h6 {
   .testi-btn-right {
     text-align: center;
   }
+
+  .touch-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .touch-items-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .touch-block-email,
+  .touch-block-tel,
+  .touch-info__link-info {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .touch-block {
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1396,6 +1571,10 @@ h6 {
   .work-rmb-number h3 {
     font-size: 30px;
   }
+
+  .copyright {
+    margin: 77px 0px 30px 0px;
+  }
 }
 
 @media (max-width: 580px) {
@@ -1415,7 +1594,8 @@ h6 {
   }
 
   .num-str h2,
-  .header__title-t h2 {
+  .header__title-t h2,
+  .touch-header h2 {
     font-size: 30px;
   }
 

@@ -84,6 +84,10 @@
     .testi-items{
         padding: 0px 20px;
     }
+    .top{
+        width: 80px;
+        height: 80px;
+    }
     
 }
 
@@ -144,6 +148,21 @@
     .testi-btn-right{
         text-align: center;
     }
+    .touch-items{
+        display: flex;
+        justify-content: center;
+    }
+    .touch-items-wrap{
+        flex-direction:column;
+    }
+    .touch-block-email,
+    .touch-block-tel,
+    .touch-info__link-info{
+        margin: 0px 0px 0px 0px;
+    }
+    .touch-block{
+        margin-bottom: 60px;
+    }
 }
 @media (max-width: 768px){
     .resize-mod p{
@@ -198,6 +217,9 @@
     .work-rmb-number h3{
         font-size: 30px;
     }
+    .copyright{
+        margin: 77px 0px 30px 0px;
+    }
 }
 @media (max-width: 580px){
     .best-item-title{
@@ -212,7 +234,8 @@
         font-size: 16px;
     }
     .num-str h2,
-    .header__title-t h2{
+    .header__title-t h2,
+    .touch-header h2{
         font-size: 30px
     }
     .header__sub-t p{

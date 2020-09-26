@@ -2,9 +2,15 @@
 .rmb-bg{
     position: absolute;
     top: calc(240 / 1400 * 100vw);
-    right: calc(130 / 1400 * 100vw);
+    right: calc(-1000 / 1400 * 100vw); // 130
     transform: rotate(45deg);
+    transition: .6s;
+    transition-delay: 1.3s;
 }
+._rmb-bg-onload{
+    right: calc(130 / 1400 * 100vw);
+}
+
 .rmb-bg-girl {
     position: relative;
     width: calc(767 / 1400 * 100vw);
@@ -18,12 +24,15 @@
     width: calc(1075 / 1400 * 100vw);
     height: calc(1075 / 1400 * 100vw);
     transform: rotate(-45deg) translateX(20%);  
-
+    transition: 1s;
+}
+.rmb-bg-girl img:hover{
+    filter: hue-rotate(45deg);
 }
 .rmb-best {
     position: absolute;
     top: calc(400 / 1400 * 100vw);
-    left: calc(194 / 1400 * 100vw);
+    left: calc(-500 / 1400 * 100vw); // 194
 
     transform: rotate(45deg);
     width: calc(400 / 1400 * 100vw);
@@ -33,6 +42,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .6s;
+    transition-delay: 1.3s;
+}
+._rmb-load{
+    left: calc(194 / 1400 * 100vw);
 }
 .rmb-best-items {
     transform: rotate(-45deg);
@@ -165,8 +179,21 @@
 
     position: absolute;
     top: calc(305 / 1400 * 100vw);
-    left: calc(475 / 1400 * 100vw);
+    left: calc(-100 / 1400 * 100vw); // 475
+    transition: .5s;
+    transition-delay: 1.3s;
+    animation: rotate .7s ;
+    animation-delay: 1.8s;
 
+}
+._rmb-mini-onload{
+    left: calc(475 / 1400 * 100vw);
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(135deg);
+    }
 }
 
 .rmb-bg,

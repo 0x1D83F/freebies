@@ -561,10 +561,20 @@ h6 {
 .rmb-bg {
   position: absolute;
   top: calc(240 / 1400 * 100vw);
-  right: calc(130 / 1400 * 100vw);
+  right: calc(-1000 / 1400 * 100vw);
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+  -webkit-transition-delay: 1.3s;
+       -o-transition-delay: 1.3s;
+          transition-delay: 1.3s;
+}
+
+._rmb-bg-onload {
+  right: calc(130 / 1400 * 100vw);
 }
 
 .rmb-bg-girl {
@@ -582,12 +592,20 @@ h6 {
   -webkit-transform: rotate(-45deg) translateX(20%);
       -ms-transform: rotate(-45deg) translateX(20%);
           transform: rotate(-45deg) translateX(20%);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.rmb-bg-girl img:hover {
+  -webkit-filter: hue-rotate(45deg);
+          filter: hue-rotate(45deg);
 }
 
 .rmb-best {
   position: absolute;
   top: calc(400 / 1400 * 100vw);
-  left: calc(194 / 1400 * 100vw);
+  left: calc(-500 / 1400 * 100vw);
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -605,6 +623,16 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+  -webkit-transition-delay: 1.3s;
+       -o-transition-delay: 1.3s;
+          transition-delay: 1.3s;
+}
+
+._rmb-load {
+  left: calc(194 / 1400 * 100vw);
 }
 
 .rmb-best-items {
@@ -764,7 +792,35 @@ h6 {
   background-color: #019edb;
   position: absolute;
   top: calc(305 / 1400 * 100vw);
+  left: calc(-100 / 1400 * 100vw);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: 1.3s;
+       -o-transition-delay: 1.3s;
+          transition-delay: 1.3s;
+  -webkit-animation: rotate .7s;
+          animation: rotate .7s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+._rmb-mini-onload {
   left: calc(475 / 1400 * 100vw);
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
 }
 
 .rmb-bg,
@@ -1604,6 +1660,10 @@ h6 {
 
   .touch-block {
     margin-bottom: 60px;
+  }
+
+  .header__title-text__main h2 {
+    letter-spacing: 0.5px;
   }
 }
 

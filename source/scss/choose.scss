@@ -24,6 +24,7 @@
 .about_wrap {
     text-align: center;
 }
+
 .about__title h2{
     color: #ffffff;
     @include lato;
@@ -31,6 +32,15 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.49px;
+}
+.h-transition{
+    transition: .8s cubic-bezier(0.22, 0.72, 0.35, 0.96);
+}
+._overflow {
+    overflow: hidden;
+}
+._hide{
+    transform: translateY(100%);
 }
 .about__title {
     margin: 0px 0px 21px 0px;

@@ -61,6 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .prt-rmb-second-items{
     display: flex;
@@ -85,17 +86,26 @@
 .prt-rmb-main {
     width: calc(377 / 1400 * 100vw);
     height: calc(377 / 1400 * 100vw);
-    transform: rotate(45deg);
     background-color: #fff;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    transition: .3s;
 
     position: absolute;
     top: calc(624 / 1400 * 100vw);
     left: calc(510 / 1400 * 100vw);
     z-index: 5;
+}
+._prt-transorm{
+    transform: rotate(45deg) scale(0.1);
+}
+._prt-transition{
+    transition: .5s;
+}
+._prt-toScale{
+    transform: scale(1);
 }
 .rmb-main-items{
     transform: rotate(-45deg);

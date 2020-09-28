@@ -39,6 +39,11 @@
 }
 .touch-block{
     display: flex;
+    transform: translateX(-100vw);
+}
+._touch-toRight{
+    transition: .5s;
+    transform: translateX(0);
 }
 .touch-block-email {
     margin-right: calc(112 / 1400 * 100vw);
@@ -94,7 +99,7 @@
 }
 .top {
     position: absolute;
-    bottom: -55px;
+    bottom: calc(-55 / 1400 * 100vw);
     left: 50%;
     transform: translate(-50%) rotate(45deg);
     width: calc(110 / 1400 * 100vw);

@@ -105,11 +105,7 @@ const textAnimator = () => {
         })
     };
 
-
-
 }
-
-
 
 window.addEventListener('scroll', textAnimator)
 

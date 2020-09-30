@@ -34,6 +34,12 @@
     }
     
 }
+@media (min-width: 968px){
+    .header__burger-close{
+        display: none;
+    }
+    
+}
 @media (max-width: 968px){
     .rmb-num-discription{
         max-width: 150px;
@@ -87,6 +93,9 @@
     .top{
         width: 80px;
         height: 80px;
+    }
+    .header__menu{
+        display: none;
     }
     
 }
